@@ -32,7 +32,8 @@ function geraCanvas(id, url){
         site = "PROPETZ";
     }
     if( site != ""){
-        $("#imagens").load("html/imagem.html");
+        $("#imagens").load("html/imagem.html").prev("li").attr("id", id + "-POST");
+        $("#imagens").load("html/imagem.html").prev("li").attr("id", id + "-STORIES");
         //$("#imagens").load("html/imagem.html").prev("li").attr("id", id + "-STORIES");
         //$("#imagens").append('<li id="' + id + '-POST"><div class="loading"><div class="flex"><div class="child"><progress class="progress is-small is-primary" max="100"></progress></div></div></div></li>');
         //$("#imagens").append('<li id="' + id + '-STORIES"><div class="loading"><div class="flex"><div class="child"><progress class="progress is-small is-primary" max="100"></progress></div></div></div></li>');
