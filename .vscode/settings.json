@@ -1,0 +1,5 @@
+{
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "compile-hero.sass-output-directory": "../css/",
+    "compile-hero.watch": ["sass/home.sass", "sass/admin.sass", "sass/bulma.sass", "sass/404.sass", "sass/index.sass"]
+}

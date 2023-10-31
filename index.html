@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light only">
+    <title>Ad Generator - bydejota</title>
+    <link rel="icon" href="img/logo-ad-generator.svg">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/index.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:wght@400;700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logo-ad-generator.svg" />
+        <h1>Ad Generator - <em>bydejota</em></h1>
+    </header>
+    <main>
+        <div class="field">
+            <label class="label">URL dos Produtos:</label>
+            <div class="control">
+                <textarea id="lista-url" class="textarea" placeholder="Cole aqui as URLs dos produtos. Uma URL por linha." rows="10"></textarea>
+            </div>
+        </div>
+        <div class="field is-grouped">
+            <div class="control">
+                <button id="gerar" class="button is-link">Gerar</button>
+            </div>
+        </div>
+        <ul id="imagens">
+        </ul>
+    </main>
+    <!-- Load External JS Packages -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Load Internal JS Packages -->
+    <!-- Load Main JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

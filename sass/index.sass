@@ -1,0 +1,66 @@
+// Import Config
+@import _colors
+
+:root
+    color-scheme: light only
+
+html, body
+    background: $cor-principal
+    font-size: 1vw
+    scroll-behavior: smooth
+
+$btn-distance: 1vh
+
+header
+    display: block
+    width: 100vw
+    height: 3vw
+    background: $cor-clara
+    position: fixed
+    top: 0
+    left: 0
+    margin: 0
+    padding: 0.5vw 2vw
+    z-index: 999999
+    img
+        display: float
+        float: left
+        width: 2vw
+        height: 2vw
+        margin-right: 1vw
+    h1
+        line-height: 2vw
+
+main
+    margin: 6vw 3vw
+    #imagens
+        display: grid
+        gap: 1rem
+        grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr))
+        li
+            position: relative
+            min-height: 20rem
+            .loading
+                display: block
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                right: 0
+                width: 100%
+                height: 100%
+                background: $cor-escura
+                z-index: 99999999999999999
+                .flex
+                    display: flex
+                    height: 100%
+                    align-items: center
+                    justify-content: center
+                    .child
+                        display: block
+                        padding: 1rem
+                        width: 100%
+            canvas
+                display: block
+                width: 100%
+                margin-bottom: 1rem
