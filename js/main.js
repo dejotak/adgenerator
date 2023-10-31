@@ -114,7 +114,7 @@ function geraCanvas(id, url){
                 
                 //desenhaCanvas(id, nomeSubtitulo, nomeTitulo, canvasDois, widthMin, widthMax, heightMin, heightMax, site, "POST", "ESCURO");
                 //desenhaCanvas(id, nomeSubtitulo, nomeTitulo, canvasDois, widthMin, widthMax, heightMin, heightMax, site, "STORIES", "ESCURO");
-                $("#" + id + '-' + tipo + " .loading").hide();
+                $(".loading").hide();
             }
             produto.src = imagemProduto + '?' + new Date().getTime();
             produto.setAttribute('crossOrigin', '');
