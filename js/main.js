@@ -35,7 +35,7 @@ function geraCanvas(id, url){
         $("#imagens").load("html/imagem.html", function(){
             console.log("loaded");
         });
-        $("#imagens").load("html/imagem.html").prev("li").attr("id", id + "-STORIES");
+        //$("#imagens").load("html/imagem.html").prev("li").attr("id", id + "-STORIES");
         //$("#imagens").append('<li id="' + id + '-POST"><div class="loading"><div class="flex"><div class="child"><progress class="progress is-small is-primary" max="100"></progress></div></div></div></li>');
         //$("#imagens").append('<li id="' + id + '-STORIES"><div class="loading"><div class="flex"><div class="child"><progress class="progress is-small is-primary" max="100"></progress></div></div></div></li>');
         $.get('https://api.codetabs.com/v1/proxy?quest=' + url, function(data){
