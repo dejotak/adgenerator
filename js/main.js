@@ -32,13 +32,11 @@ function geraCanvas(id, url){
         site = "PROPETZ";
     }
     if( site != ""){
-        $("#imagens").load("html/imagem.html", function(){
-            console.log("loaded");
-        });
+        $("#imagens").load("html/imagem.html");
         //$("#imagens").load("html/imagem.html").prev("li").attr("id", id + "-STORIES");
         //$("#imagens").append('<li id="' + id + '-POST"><div class="loading"><div class="flex"><div class="child"><progress class="progress is-small is-primary" max="100"></progress></div></div></div></li>');
         //$("#imagens").append('<li id="' + id + '-STORIES"><div class="loading"><div class="flex"><div class="child"><progress class="progress is-small is-primary" max="100"></progress></div></div></div></li>');
-        $.get('https://api.codetabs.com/v1/proxy?quest=' + url, function(data){
+        /*$.get('https://api.codetabs.com/v1/proxy?quest=' + url, function(data){
             var dataElement = $(data);
             var nomeProduto = $(".nome-produto-completo h1", dataElement).text().split(" ");
             var imagemProduto = $(".vtex-store-components-3-x-productImageTag", dataElement).attr("src").split("?")[0].slice(0,-8) + "1200-auto";
@@ -118,7 +116,7 @@ function geraCanvas(id, url){
             }
             produto.src = imagemProduto + '?' + new Date().getTime();
             produto.setAttribute('crossOrigin', '');
-        });
+        });*/
     }
     else{
         console.log(host + " não reconhecido");
